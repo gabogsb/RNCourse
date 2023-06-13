@@ -1,0 +1,17 @@
+module.exports = {
+  arrowParens: 'avoid',
+  bracketSameLine: true,
+  bracketSpacing: true,
+  singleQuote: true,
+  trailingComma: 'all',
+  semi: true,
+  tabWidth: 2,
+  printWidth: 100,
+
+  "prettier/prettier": [
+  "error",
+  {
+    "endOfLine": "auto"
+  }
+]
+};
