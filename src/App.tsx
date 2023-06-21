@@ -1,9 +1,10 @@
-import { SafeAreaView, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native';
+import Login from './modules/login';
 
 export default function App() {
   return (
     <SafeAreaView>
-      <Text>Salve Gerall</Text>
+      <Login />
     </SafeAreaView>
   );
 };

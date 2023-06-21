@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.71.10"
+    "react-native": "0.71.10",
+    "styled-components": "^5.3.11"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -22,8 +23,10 @@
     "@react-native-community/eslint-config": "^3.2.0",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^29.2.1",
-    "@types/react": "^18.0.24",
+    "@types/react": "^18.2.13",
+    "@types/react-dom": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
+    "@types/styled-components-react-native": "^5.2.1",
     "@typescript-eslint/eslint-plugin": "^5.59.11",
     "@typescript-eslint/parser": "^5.59.11",
     "babel-jest": "^29.2.1",
