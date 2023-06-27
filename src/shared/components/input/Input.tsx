@@ -5,7 +5,8 @@ import { ContanierInput } from "./input.styled";
 
 type InputProps = TextInputProps;
 
-export default function Input({...props}: InputProps) {
+export default function Input({ ...props }: InputProps) {
+  
   return (
     <ContanierInput {...props} />
   )
