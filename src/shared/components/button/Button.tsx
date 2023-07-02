@@ -29,7 +29,7 @@ export default function Button({ title, type, loading, disabled, onPress, margin
           color={theme.colors.neutralTheme.white}
         />
       ) : (
-          <Text type={textTypes.BUTTON_BOLD} color={color}>{ title }</Text>
+          <Text type={textTypes.BUTTON_SEMI_BOLD} color={color}>{ title }</Text>
       )}
     </>
   )

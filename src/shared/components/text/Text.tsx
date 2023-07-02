@@ -6,10 +6,11 @@ import { useMemo } from 'react';
 
 interface TextProps extends TextPropsNative{
   color?: string;
-  type?: string
+  type?: string;
+  customMargin?: string;
 }
 
-export default function Text({ color, type, ...props }: TextProps) {
+export default function Text({ color, type, customMargin, ...props }: TextProps) {
 
   const renderFontSize = useMemo(() => {
     switch (type) {
@@ -18,18 +19,18 @@ export default function Text({ color, type, ...props }: TextProps) {
       case textTypes.TITLE_REGULAR:
       case textTypes.TITLE_LIGHT:
         return '24px'
-      case textTypes.SUBTITLE_BOLD:   
-      case textTypes.SUBTITLE_SEMI_BOLD:   
+      case textTypes.SUBTITLE_BOLD:
+      case textTypes.SUBTITLE_SEMI_BOLD:
       case textTypes.SUBTITLE_REGULAR:
       case textTypes.SUBTITLE_LIGHT:
         return '20px'
       case textTypes.BUTTON_BOLD:
       case textTypes.BUTTON_SEMI_BOLD:
-      case textTypes.BUTTON_REGULAR: 
+      case textTypes.BUTTON_REGULAR:
       case textTypes.BUTTON_LIGHT:
         return '18px'
       case textTypes.PARAGRAPH_BOLD:
-        default:
+      default:
       case textTypes.PARAGRAPH_SEMI_BOLD:
       case textTypes.PARAGRAPH_REGULAR:
       case textTypes.PARAGRAPH_LIGHT:
@@ -55,10 +56,10 @@ export default function Text({ color, type, ...props }: TextProps) {
       case textTypes.BUTTON_SEMI_BOLD:
       case textTypes.PARAGRAPH_SEMI_BOLD:
       case textTypes.PARAGRAPH_SMALL_SEMI_BOLD:
-        // return 'Poppins-SemiBold'
+        return 'Poppins-SemiBold'
       case textTypes.TITLE_REGULAR:
       case textTypes.SUBTITLE_REGULAR:
-      case textTypes.BUTTON_REGULAR: 
+      case textTypes.BUTTON_REGULAR:
       case textTypes.PARAGRAPH_REGULAR:
       case textTypes.PARAGRAPH_SMALL_REGULAR:
         return 'Poppins-Regular'
@@ -75,6 +76,6 @@ export default function Text({ color, type, ...props }: TextProps) {
   }, [type])
 
   return (
-    <ContainerText fontFamily={renderFontFamily} fontSize={renderFontSize} color={color} {...props} />
+    <ContainerText customMargin={customMargin} fontFamily={renderFontFamily} fontSize={renderFontSize} color={color} {...props} />
   )
 }

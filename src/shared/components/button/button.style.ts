@@ -19,7 +19,7 @@ export const ContainerButton = styled.TouchableOpacity<ContainerButtonProps>`
 export const ContainerButtonGradeinet = styled(LinearGradient) <ContainerButtonProps>`
 
   ${(props) => props.margin ? `margin: ${props.margin}` : ''}
-  border-radius: 18px;
+  border-radius: 24px;
   width: 100%;
   height: 100%;
   display: flex;

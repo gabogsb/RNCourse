@@ -19,9 +19,9 @@ export default function Login() {
 
   return (
     <ContainerLogin>
-      <Input />
+      <Input placeholder='Digite seu Email' title='Email:'/>
       <Button
-        title='Clica em mim'
+        title='Entrar'
         onPress={handleOnpress}
         margin="8px"
         type={theme.buttons.buttonsTheme.primary}
